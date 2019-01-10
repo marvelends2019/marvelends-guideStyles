@@ -1,0 +1,494 @@
+////////////////////////////////////
+//SETUP
+////////////////////////////////////
+//colors
+$firstColor:#ffe600;
+$secondColor:#f3d40b;
+$thirdColor:#E9A60C;
+$fourColor:#F1F30C;
+$fiveColor:rgb(204, 20, 97);
+$fiveColorHover:hsla(335, 82%, 44%, 0.815);
+//btn-colors
+$btnTrueHover: hsl(130, 83%, 42%);
+$btnTrue: hsla(130, 83%, 42%, 0.69);
+$btnFalseHover: #dc143c;
+$btnFalse: hsla(348, 83%, 47%, 0.753);
+$btnNullHover: #ffd000;
+$btnNull: hsla(49, 100%, 50%, 0.479);
+//basicColors
+$fontColor:#4b4b4d;
+$bkgColor:#f7f8f8;
+//fonts
+$fontLogo:'Satisfy', cursive;
+$headersFont:'Abril Fatface', cursive;
+$textFont:'Roboto', sans-serif;
+//boxshadow
+$boxShadow:0 3px 20px rgba(0,0,0,.19), 0  4px 6px rgba(0,0,0,.23);
+@function Rem($px){
+    $remSize:$px/16;
+    @return #{$remSize}rem;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+body{
+    box-sizing: border-box;
+    font-family: $textFont;
+    background: $bkgColor;
+    color: $fontColor;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $headersFont;
+    font-weight: lighter;
+}
+.container{
+    overflow: hidden;
+    padding: 0 Rem(50);
+}
+////////////////////////////////////
+//VARIOS
+////////////////////////////////////
+.myModal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding: 25px;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.closeModal{
+    color: $bkgColor;
+    font-size: Rem(25);
+    float: right;
+    margin-right: Rem(55);
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.bodyModal{
+    max-width: Rem(500);
+    margin: 0 auto;
+    margin-top: 25vh;
+    background: $secondColor;
+    border-top-left-radius: Rem(8);
+    border-top-right-radius: Rem(8);
+}
+.headerModal{
+    text-transform: uppercase;
+    text-align: center;
+}
+.contentModal{
+    background: $fontColor;
+    color: $bkgColor;
+    padding: Rem(15);
+}
+.btnFormContainer{
+text-align: center;
+}
+
+////////////////////////////////////
+//COLORS
+////////////////////////////////////
+section.colors{
+    border-bottom: $fontColor 1px solid;
+    background: #4b4b4d;
+    color: $bkgColor;
+}
+.principales{
+    width: Rem(300);
+    height: Rem(300);
+    background: $fontColor;
+    border: 1px solid $fontColor;
+}
+#color1{background: $firstColor;}
+#color2{background: $secondColor;}
+#color3{background: $thirdColor;}
+#color4{background: $fourColor;}
+#color5{background: $fiveColor;}
+#color6{background: $btnTrue;}
+#color7{background: $btnFalse;}
+#color8{background: $btnNull;}
+.secondColorContainer{
+    display: inline-block;
+    overflow: hidden;
+    width: Rem(230);
+    margin-left: Rem(10);
+}
+.secondColorContainer > div{
+    margin: 0 auto;
+    display: inline-block;
+    margin-right: Rem(10);
+}
+.secundarios{
+    border: 1px solid $fontColor;
+    width: Rem(50);
+    height: Rem(50);
+    display: block;
+    margin: 0 auto;
+}
+.secundarios + p{
+    font-size: Rem(12);
+    text-align: center;
+}
+.colorContainer{
+    display: inline-block;
+    margin-left: Rem(5);
+    p{
+        text-transform: uppercase;
+        text-align: center;
+    }
+}  
+.grises{
+    display: inline-block;
+    p{text-align: center;}
+    text-transform: uppercase;
+}
+#gris1{
+    width: Rem(147);
+    height: Rem(147);
+    background: $bkgColor;
+    border: 1px solid $fontColor;
+}
+#gris2{
+    width: Rem(147);
+    height: Rem(147);
+    background: $fontColor;
+    border: 1px solid gold;
+}
+section.fontsFormsButtons{
+    background:radial-gradient($firstColor,$secondColor);
+    .container{display: flex;}
+    border-bottom: #4b4b4d 1px solid;
+}
+////////////////////////////////////
+//FONTS
+////////////////////////////////////
+.fonts{
+    padding: Rem(15);
+    flex: 1 1 ;
+}
+.fontLogo{
+
+    font-family: $fontLogo;
+    span{
+        font-family: $textFont;
+        font-weight: bold;
+    }
+}
+.fontText{
+    font-family: $textFont;
+    font-weight: bold;
+}
+.forms{
+    padding: Rem(15);
+    flex: 1 1 0;
+    border-left: $fontColor 1px solid;
+    border-right: $fontColor 1px solid;
+}
+.logo{
+    width: Rem(150);
+    h1{
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0;
+        line-height: 12px;
+        font-family: $fontLogo;
+    }
+    p{
+        font-size: Rem(12);
+        text-align: center;
+    }
+}
+p{
+    text-align: justify;
+}
+.link{
+    color:$fiveColor;
+    font-style: italic;
+}
+////////////////////////////////////
+//FORMS
+////////////////////////////////////
+.forms{
+    padding: Rem(30);
+}
+form{
+    .btnMarvelend{
+        border-color: $secondColor;
+        color: $secondColor;
+    }
+}
+label{
+    text-transform: capitalize;
+    font-size: Rem(22);
+    user-select: none;
+}
+input::placeholder{
+    color:#ccc;
+}
+input[type=text], input[type=password], textarea, select{
+    width: 100%;
+    font-family: $textFont;
+    border:none;
+    font-size: Rem(19);
+    padding: Rem(5);
+    border-radius: 2px;
+    outline-color: $fontColor;
+    border: 1px solid $fontColor;
+    margin: Rem(10) 0px;
+    box-shadow: $boxShadow;
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus{
+    box-shadow: 0 0 6px 1px $btnTrue;
+}
+.radiocheck-container {
+    display: block;
+    position: relative;
+    padding-left: Rem(35);
+    margin-bottom: Rem(12);
+    cursor: pointer;
+    font-size: Rem(22);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .radiocheck-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: Rem(25);
+    width: Rem(25);
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .radiocheck-container:hover input ~ .checkmark,.radiocheck-container:hover input ~ .check-checkmark {
+    background-color: #ccc;
+  }
+  
+  .radiocheck-container input:checked ~ .checkmark,.radiocheck-container input:checked ~ .check-checkmark {
+    background-color: $fontColor;
+  }
+  .checkmark:after, .check-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .radiocheck-container input:checked ~ .checkmark:after, .radiocheck-container input:checked ~ .check-checkmark:after {
+    display: block;
+  }
+  .radiocheck-container .checkmark:after{
+      top: Rem(9);
+      left: Rem(9);
+      width: Rem(8);
+      height: Rem(8);
+      border-radius: 50%;
+      background: white;
+  }
+  .check-checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  .radiocheck-container .check-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+////////////////////////////////////
+//BUTTONS
+////////////////////////////////////
+.buttons{
+    padding: Rem(15);
+    flex: 1 1 0;
+    text-align: center; 
+}
+.btnMarvelend{
+    border: none;
+    margin: Rem(7);
+    border-top: 2px solid $fontColor;
+    border-bottom: 2px solid $fontColor;
+    background: transparent;
+    text-transform: uppercase;
+    padding: Rem(10) Rem(18);
+    font-weight: 400;
+    outline: none;
+    font-family: $headersFont;
+    position: relative;
+    overflow:hidden;
+    text-decoration: none;
+    color: $fontColor;
+    display: inline-block;
+}
+.btnMarvelend:hover{
+    cursor: pointer;
+}
+
+.btnMarvelend:active{
+    transform: scale(.97);
+}
+.btnMarvelend::before{
+    display: none;
+    content: "*";
+    position: absolute;
+    left: 5px;
+    top:14px;
+    animation-name: a;
+    animation-duration: .3s;
+}
+.btnMarvelend:hover::before{
+    content: "*";
+    display: inline-block;
+}
+@keyframes a{
+    0%{
+        left: -15px;
+    }
+    100%{
+        left: 5px;
+    }
+}
+.btnMarvelend::after{
+    content: "*";
+    display: none;
+    position: absolute;
+    right: 5px;
+    top:14px;
+    animation-name: b;
+    animation-duration: .3s;
+}
+.btnMarvelend:hover::after{
+    content: "*";
+    display: inline-block;
+}
+@keyframes b{
+    0%{
+        right: -15px;
+    }
+    100%{
+        right: 5px;
+    }
+}
+.btn{
+    text-decoration: none;
+    text-align: center;
+    margin: Rem(7);
+    padding: Rem(5) Rem(10);
+    min-width: Rem(120);
+    font-weight: 500;
+    border: none;
+    box-shadow: $boxShadow;
+    color: $bkgColor;
+    outline: none;
+}
+.btnCta{
+    background: $fiveColor;
+}
+.btnTrue{
+    background: $btnTrue;
+}
+.btnFalse{
+    background: $btnFalse;
+}
+.btnNull{
+    background: $btnNull;
+}
+.btnCta:hover{
+    background: $fiveColorHover;
+    cursor: pointer;
+}
+.btnTrue:hover{
+    background: $btnTrueHover;
+    cursor: pointer;
+    
+}
+.btnFalse:hover{
+    background: $btnFalseHover;
+    cursor: pointer;
+}
+.btnNull:hover{
+    background: $btnNullHover;
+    cursor: pointer;
+}
+.btnCta:active{
+    background: $fiveColor;
+    transform: scale(.97);
+}
+.btnTrue:active{
+    background: $btnTrue;
+    transform: scale(.97);
+}
+.btnFalse:active{
+    background: $btnFalse;
+    transform: scale(.97);
+}
+.btnNull:active{
+    background: $btnNull;
+    transform: scale(.97);
+}
+////////////////////////////////////
+//ICONS
+////////////////////////////////////
+.icon{
+    text-align: center;
+    margin-right: Rem(15);
+    //border: 1px solid red;
+    display: inline-block;
+    p{
+        font-size: Rem(12);
+        text-align: center;
+    }
+    i{
+        font-size: Rem(25);
+    }
+}
+////////////////////////////////////
+//IMAGENES
+////////////////////////////////////
+section.image{
+    background:radial-gradient($firstColor,$secondColor);
+    overflow: hidden;
+    h2{
+        text-align: center;
+    }
+    p{text-align: center;}
+}
+.images{
+    max-width:Rem(300);
+    overflow: hidden;
+    border: $bkgColor 3px solid;
+    display: inline-block;
+    margin: Rem(4);
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    img+p{
+        margin: 0;
+        padding: Rem(5);
+        min-width: 100%;
+        background: $bkgColor;
+    }
+}
