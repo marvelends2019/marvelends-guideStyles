@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./stylesguides/stylesheets/normalize.css">
+    <link rel="stylesheet" href="./stylesguides/stylesheets/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesguides/stylesheets/animate.css">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon2.png"/>
+    <link rel="stylesheet" href="./stylesguides/stylesheets/style.css">
+    <title>Marvelend's | styleguides</title>
+</head>
+<body>
+    <div class="myModal">
+        <button class="closeModal" id="closeModal">
+            <i class="far fa-window-close"></i>
+        </button>
+        <div class="bodyModal">
+      
+            <div class="headerModal">
+                <div class="container">
+                    <h2>CONTACTO</h2>
+                </div>
+            </div>
+            <div class="contentModal">
+                <div class="container">
+                    <form action="contact.php" method="post">   
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+                        <label for="mail">E-mail:</label>
+                        <input type="text" name="mail" id="mail" placeholder="Correo electrónico">
+                        <label for="phone">Telefono:</label>
+                        <input type="text" name="phone" id="phone" placeholder="Telefono">
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" id="message"></textarea>
+                        <div class="btnFormContainer">    
+                            <button class="btn btnTrue" id="submitContact">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </div>  
+    <section class="colors">
+        <div class="container">
+            <h2>COLORES</h2>
+            <div class="colorContainer">    
+                <div class="principales" id="color1"></div>
+                <p>hex:#ffe600</p>
+            </div>
+            <div class="colorContainer">              
+                <div class="principales" id="color2"></div>
+                <p>hex:#f3d40b</p>
+            </div>
+            <div class="colorContainer">
+                <div class="principales" id="color3"></div>
+                <p>hex:#E9A60C</p>
+            </div>
+            <div class="secondColorContainer">
+                <h3>SECUNDARIOS</h3><br>
+                <div>
+                    <div class="secundarios" id="color4"></div>
+                    <p>hex:#1F30C</p>
+                </div>
+                <div>
+                    <div class="secundarios" id="color5"></div>
+                    <p>hex:#CC1461</p>
+                </div><br>
+                <div>
+                    <div class="secundarios" id="color6"></div>
+                    <p>hex:#CC1461</p>
+                </div>    
+                <div>
+                    <div class="secundarios" id="color7"></div>
+                    <p>hex:#CC1461</p>
+                </div><br>
+                <div>
+                    <div class="secundarios" id="color8"></div>
+                    <p>hex:#CC1461</p>
+                </div>
+            </div>
+            <h3>GRISES</h3>
+            <div class="grises">
+                <div class="secundarios" id="gris1"></div>
+                <p>hex:#f7f8f8</p>
+            </div>
+            <div class="grises">
+                <div class="secundarios" id="gris2"></div>
+                <p>hex:#4b4b4d</p>
+            </div>
+        </div>
+    </section>
+    <section class="fontsFormsButtons">
+        <div class="container">
+    
+            <div class="fonts">
+                <h2>FUENTES</h2><br>
+                <h1 class="fontLogo">Satisfy + <span>Roboto</span></h1>
+                <div class="logo">
+                    <h1>Marvelend's</h1>
+                    <p>Web development</p>
+                </div>
+            <div>
+                <a href="#" class="link">LINKS</a>
+            </div>
+            <h1 class="fontHeading">Abril Fatface</h1>
+            <h1>HEADING - H1</h1>
+            <h2>HEADING - H2</h2>
+            <h3>HEADING - H3</h3>
+            <h4>HEADING - H4</h4>
+            <h5>HEADING - H5</h5>
+            <h6>HEADING - H6</h6>
+            <h1 class="fontText">Roboto</h1>
+            <P>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit libero praesentium consequuntur eum, consequatur repudiandae voluptatibus! Ex, corrupti commodi, cumque voluptas reprehenderit aperiam quidem illo atque, vitae perspiciatis libero.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dolore recusandae animi iste necessitatibus. Adipisci temporibus voluptatum culpa quos, porro officiis maiores iure excepturi laboriosam provident quod eaque maxime modi?
+            </P>
+        </div>
+            <div class="forms">
+                <h2>FORMULARIO</h2><br>
+                <div>
+                    <label for="#">Text 1
+                        <input type="text"  placeholder="usuario@gmail.com">
+                    </label>
+                </div>
+                <div>
+                    <label for="#">Text 2
+                        <input type="password" placeholder="PASSWORD">
+                    </label>
+                </div>
+                <label>textarea</label><br>
+                <textarea placeholder="Escribe un mensaje" style="height:200px"></textarea>
+                <select id="country" name="optiones">
+                    <option value="opcion1">Opcion-1</option>
+                    <option value="opcion2">Opcion-2</option>
+                    <option value="opcion3">Opcion-3</option>
+                </select>
+                <div style="display:inline-block; margin-right:100px;">
+                    <label class="radiocheck-container" >One
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radiocheck-container">Two
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radiocheck-container">Three
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="display:inline-block;">
+                    <label class="radiocheck-container">One
+                        <input type="checkbox" checked="checked">
+                        <span class="check-checkmark"></span>
+                    </label>
+                              
+                    <label class="radiocheck-container">Two
+                        <input type="checkbox">
+                        <span class="check-checkmark"></span>
+                    </label>
+                              
+                    <label class="radiocheck-container">Three
+                        <input type="checkbox">
+                        <span class="check-checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="buttons">
+                <h2>BOTONES</h2><br>
+                <button class="btn btnCta">CALL TO ACTION</button><br>
+                <button class="btn btnTrue">ACEPTAR</button><br>
+                <button class="btn btnFalse">CANCELAR</button><br>
+                <button class="btn btnNull">LIMPIAR</button><br>
+                <button class="btnMarvelend btnMarvelendAnimation" id="btnMarvelend" data-content="*">marvelend</button><br>
+                <a href="#" class="btnMarvelend">hola</a>
+                <hr>
+                <h2>CONTACTO</h2>
+                <p style="text-align:center;">(click para ver formulario de contacto)</p>
+                <button class="btn btnCta" id="modal">CONTACTO</button>
+                <hr>
+                <div class="icons">
+                    <h2>ICONS</h2>
+                    <p style="text-align:center;">(FontAwesome)</p>
+                    <div class="iconsContainer">
+                        <div class="icon">
+                            <i class="fa fa-bars"></i>
+                            <p>fa fa-bars</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-facebook"></i>
+                            <p>fab fa-facebook</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-twitter"></i>
+                            <p>fab fa-twitter</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-instagram"></i>
+                            <p>fab fa-instagram</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-github"></i>
+                            <p>fab fa-github</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-html5"></i>
+                            <p>fab fa-html5</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-css3"></i>
+                            <p>fab fa-css3</p>
+                        </div>  
+                        <div class="icon">
+                            <i class="fab fa-js"></i>
+                            <p>fab fa-js</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-php"></i>
+                            <p>fab fa-php</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-wordpress"></i>
+                            <p>fab fa-wordpress</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-node"></i>
+                            <p>fab fa-node</p>
+                        </div>    
+                        <div class="icon">
+                            <i class="fab fa-react"></i>
+                            <p>fab fa-react</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-sass"></i>
+                            <p>fab fa-sass</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-linux"></i>
+                            <p>fab fa-linux</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-angle-down"></i>
+                            <p>fab fa-angle-down</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-angle-up"></i>
+                                <p>fab fa-angle-up</p>
+                        </div>      
+                        <div class="icon">
+                            <i class="fas fa-arrow-alt-circle-up"></i>
+                                <p>fas fa-arrow-alt-circle-up</p>
+                        </div>             
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image">
+        <h2>IMAGENES</h2>
+        <p>(Descargables)</p>
+        <div class="imageContainer">
+            <div class="images">
+                <img src="./images/boceto.jpeg" alt="">
+                <p>DESCRIPCION</p>
+            </div>
+            <div class="images">
+                <img src="./images/fruit.jpg" alt="">
+                <p>DESCRIPCION</p>
+            </div>
+            <div class="images">
+                <img src="./images/idea.jpeg" alt="">
+                <p>DESCRIPCION</p>
+            </div>
+            <div class="images">
+                <img src="./images/pexels-photo-1068523.jpeg" alt="">
+                <p>DESCRIPCION</p>
+            </div>
+            <div class="images">
+                <img src="./images/trato.jpeg" alt="">
+                <p>DESCRIPCION</p>
+            </div>
+            <div class="images">
+                <img src="./images/studioKlight.jpg" alt="">
+                <p>DESCRIPCION</p>
+            </div>
+            <div class="images">
+                <img src="./images/studiokDark.jpg" alt="">
+                <p>DESCRIPCION</p>
+            </div>
+            <div class="images">
+                <img src="./images/boceto.jpeg" alt="">
+                <p>DESCRIPCION</p>
+            </div>
+        </div>
+    </section>
+    <script src="./stylesguides/javascripts/jquery-3.3.1.js"></script>
+    <script src="./stylesguides/javascripts/main.js"></script>
+</body>
+</html>
